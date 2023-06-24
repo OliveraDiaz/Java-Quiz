@@ -13,14 +13,43 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   } 
 
-  section{
-    margin: 10px;
+ .frontPage {
+    display: flex;
+    display: block;
+   justify-content: center;
+   text-align: center;
     padding: 10px;
+    margin: 10px;
   }
+ .mainHeader {
+    padding: 50px;}
   
   button{
     background-color: blueviolet;
     padding: 10px;
     margin: 20px;
+
+  }
+
+  .quiz {
+    display: flex;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: brown;
+  }
+  
+  #questions {
+    background-color: blue;
+  }
+
+  .answers {
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .show {
+    display: block;
   }
   
