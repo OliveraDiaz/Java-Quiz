@@ -7,7 +7,7 @@
   
  header {
     padding: 20px;
-    margin: 10px;
+    margin: 30px;
     display: flex;
     justify-content: space-between;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,8 +21,9 @@
     padding: 10px;
     margin: 10px;
   }
- .mainHeader {
+  .title {
     padding: 50px;}
+    
   
   button{
     background-color: blueviolet;
@@ -36,10 +37,12 @@
     display: block;
     justify-content: center;
     text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: brown;
   }
   
-  #questions {
+  .question {
     background-color: blue;
   }
 
@@ -48,7 +51,7 @@
     padding: 10px;
     margin: 10px;
   }
-  
+
   .show {
     display: block;
   }
