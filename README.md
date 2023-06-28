@@ -15,3 +15,4 @@ Usage
 This website is meant for students learning Javascript.
 
 ##Link to page
+https://oliveradiaz.github.io/Java-Quiz2/
