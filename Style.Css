@@ -4,55 +4,22 @@
     padding: 0;
   }
 
+header{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.strt-btn{
+ display: flex;
+ justify-content: center;
+
+}
+
+.list {
+  list-style-type: none;
+}
+
   
- header {
-    padding: 20px;
-    margin: 30px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  } 
 
- .frontPage {
-    display: flex;
-    display: block;
-   justify-content: center;
-   text-align: center;
-    padding: 10px;
-    margin: 10px;
-  }
-  .title {
-    padding: 50px;}
-    
-  
-  button{
-    background-color: blueviolet;
-    padding: 10px;
-    margin: 20px;
-
-  }
-
-  .quiz {
-    display: flex;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: brown;
-  }
-  
-  .question {
-    background-color: blue;
-  }
-
-  .answers {
-    background-color: green;
-    padding: 10px;
-    margin: 10px;
-  }
-
-  .show {
-    display: block;
-  }
   
