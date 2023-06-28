@@ -4,76 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Quiz</title>
-    <link rel="stylesheet" href="Style.Css">
 </head>
 <body>
-    <header id="dash">
-        <!-- score -->
-            <p>High Score</p>
+    <!-- Container for Header -->
+    <header>
+        <!-- div for scores link and time -->
+            <!-- View highscores -->
+                <!-- <a href="">View Highscores</a> -->
+                <button id="view-scores" type="button">View High Scores</button>
             <!-- Timer -->
-            <p id="timer">Time remaining
-
-            </p>
-        </div>
+                <p class="time">Time remaining: 60s</p>
     </header>
-<section id="instructions">
-    <div class="frontPage">
-        <!-- prompt -->
-        <h1 class="title">Coding Challenge Quiz</h1>
-        <p>Try to answer the following questions with in the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds.</p>
-        <!-- Was the answer Correct or incorrect? -->
-        <button id="start">Start quiz!</button>
-    </div>
-</section>
+    <!-- Main Content -->
+    <main>
+        <!-- Container for Intro, Questions, Answers -->
+        <div class="container">
+            <!-- Section for H1 and Intro // Hide upon Start-->
+            <section id="intro">                 
+                        <h1>Welcome to the Javascript Coding Quiz Challenge!</h1>
+                        <p>Try to answer the following javascript code questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                        <button id="start" type="button">Start Quiz</button></p>
+            </section>
 
-<section class="questions">
-    <div id="quest1">
-        <h1 class="question">Questions</h1>
-        <ul>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-        </ul>
-    </div>
-    <div id="quest2">
-        <h1 class="question">Questions</h1>
-        <ul>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-        </ul>
-    </div>
-    <div id="quest3">
-        <h1 class="question">Questions</h1>
-        <ul>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-        </ul>
-    </div>
-    <div id="quest4">
-        <h1 class="question">Questions</h1>
-        <ul>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-        </ul>
-    </div>
-    <div id="quest5">
-        <h1 class="question"">Questions</h1>
-        <ul>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-            <li class="answers">answer1</li>
-        </ul>
-    </div>
-</section>
+            <!-- Section for Question and Answers // Show upon Start-->
+            <section id="questions">        
 
-<script src="Java.JS"> </script>
+                    
+                        <h2 id="question">I'm a question</h2>
+                        <ul>
+                            <li><button id="answer1" value="0" type="button"
+                                    >Answer1</button></li>
+                            <li><button id="answer2" value="1" type="button"
+                                    >Answer2</button></li>
+                            <li><button id="answer3" value="2" type="button"
+                                    >Answer3</button></li>
+                            <li><button id="answer4" value="3" type="button"
+                                    >Answer4</button></li>
+                        </ul>
+                        <div id="result">
+                            <hr>
+                            <!-- Correct or Wrong will be added via JS -->
+                        </div>
+                    
+            </section>
+
+            <!-- Section for Final Score and Name -->
+            <section id="final">
+                        <h2>All done!</h2>
+                        <p>Your final score is: <span id="score">0</span></p>
+                        <!-- <p class="score">Your final score is: </p> -->
+                        <p>Enter initials: <span><input placeholder="initials" id="initials" /></span>
+                            <button id="submit-score">Submit</button>
+                        </p>
+            </section>
+
+            <!-- Section for High Scores -->
+            <section id="highscores">
+
+                            <h2>High Scores</h2>
+                            <!-- High scores should be added as a sorted desc list -->
+                            <ol id="score-list">
+                                <!-- <li></li> -->
+                            </ol>
+                            <button id="goback">Go back</button>
+                            <button id="clearscores">Clear scores</button>
+            </section>
+
+            <!-- Container Ends -->
+        </div>
+    </main>
+    <script src="Java.JS"></script>
 </body>
-</html>
