@@ -57,7 +57,7 @@ const questions = [ // array of objects
     {
         // question 0
         question: "1. JavaScript is the programming language of the _____.",
-        answers: ["Desktop", "2. Mobile", "3. Web", "4. Server"],
+        answers: ["Desktop", "Mobile", "Web", "Server"],
         correctAnswer: "2"
     },
     {
@@ -103,8 +103,11 @@ function setTime() {
         }
     }, 1000);
 }
-
+// hide questions, initials and high scores for intro page
 questionsEl.style.display = "none";
+final.style.display = "none";
+highscoresEl.style.display = "none";
+
 // start quiz with timer and set up questions
 function startQuiz() {
     introEl.style.display = "none";
